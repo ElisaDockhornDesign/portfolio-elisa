@@ -8907,6 +8907,7 @@ ul {
 .team-details__top {
   position: relative;
   display: block;
+  z-index: 1;
 }
 
 .team-details__top-left {
@@ -8916,8 +8917,11 @@ ul {
 }
 
 .team-details__top-img {
-  position: relative;
-  display: block;
+    width: 100%;
+    border-bottom-left-radius: 150px;
+    border-top-right-radius: 150px;
+    display: block;
+    z-index: 1;
 }
 
 .team-details__top-img img {
@@ -8935,40 +8939,37 @@ ul {
   width: 100%;
   padding: 15px 50px 17px;
   border-top-right-radius: 65px;
-  z-index: 2;
+  z-index: 3;
 }
 
-.team-details__client-content>P {
+.team-details__client-content > p {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.080em;
 }
 
-.team-details__client-content>h4 {
+.team-details__client-content > h4 {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
 }
 
 .team-details__social-and-share {
-  position: absolute;
-  bottom: 0;
-  right: -50px;
+  width: 100%;              /* 🔹 ocupa toda a linha */
+  display: flex;           
+  justify-content: center;  /* 🔹 centraliza os ícones */
+  padding: 15px 0;          /* 🔹 evita o quadrado */
   background-color: var(--zefxa-black);
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 13px;
-  padding-right: 13px;
-  z-index: 2;
+  border-radius: 20px;
+  margin-top: 15px;
+  z-index: 3;
 }
 
 .team-details__social {
-  position: relative;
+  width: 100%;
+  flex: 1 1 auto; 
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .team-details__social a {
@@ -8976,8 +8977,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 54px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   font-size: 18px;
   color: var(--zefxa-white);

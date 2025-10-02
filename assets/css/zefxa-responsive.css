@@ -1077,7 +1077,7 @@
     }
 
     .about-three__bg-box {
-        display: none;
+        display: inline-block;
     }
 
     .about-three__text-1 {
@@ -1339,13 +1339,6 @@
         left: 0;
         bottom: 0;
         padding: 15px 0 17px;
-    }
-
-    .team-details__social-and-share {
-        position: relative;
-        bottom: 0;
-        right: 0;
-        width: 80px;
     }
 
     .team-details__points li {
