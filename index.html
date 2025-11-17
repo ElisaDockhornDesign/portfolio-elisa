@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
     <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
     <link rel="stylesheet" href="assets/vendors/zefxa-icons/style.css">
+    <link rel="stylesheet" href="assets/vendors/selected-icons/style.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
@@ -44,6 +45,24 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/zefxa.css" />
     <link rel="stylesheet" href="assets/css/zefxa-responsive.css" />
+    <style>
+        .service-two__text {
+            max-height: 150px;          
+            overflow-y: auto;            
+            scrollbar-width: thin;       
+            scrollbar-color: #ccc transparent;
+            padding-right: 5px;          
+            }
+
+            .service-two__text::-webkit-scrollbar {
+            width: 6px;
+            }
+            .service-two__text::-webkit-scrollbar-thumb {
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 4px;
+            }
+            
+    </style>
 </head>
 <body class="custom-cursor">
 
@@ -264,17 +283,19 @@ Busco gerar resultados positivos por meio do design, sempre priorizando a experi
                     <h2 class="section-title__title">Materiais Desenvolvidos</h2>
                 </div>
                 <div class="row">
-                    <!--service Two Single Start-->
                     <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
                         <div class="service-two__single">
                             <div class="service-two__content-inner">
                                 <div class="service-two__content">
                                     <div class="service-two__icon">
-                                        <span class="icon-bullhorn"></span>
+                                        <span class="icon-airplane"></span>
                                     </div>
                                     <h3><a href="assets/flies/Manual de Identidade - CoasteiraLuxeResorts.pdf" target="_blank">Coasteira Luxe Resorts</a></h3>
                                 </div>
-                                <p class="service-two__text">Manual de Identidade</p>
+                               <p class="service-two__text">
+                                    (Projeto acadêmico) O “Manual de Identidade Coasteira Luxe Resorts” apresenta o desenvolvimento de uma marca fictícia voltada ao segmento de turismo e hospedagem de luxo.  
+                                    O projeto abrange todo o processo de criação da identidade visual — incluindo logotipo, paleta de cores, tipografia e aplicações — com foco em transmitir sofisticação, exclusividade e conexão com o ambiente costeiro.
+                                </p>
                                 <div class="service-two__read-more">
                                     <a href="assets/flies/Manual de Identidade - CoasteiraLuxeResorts.pdf" target="_blank">Mais Informações<span
                                             class="fas fa-arrow-circle-right"></span></a>
@@ -288,7 +309,23 @@ Busco gerar resultados positivos por meio do design, sempre priorizando a experi
                                     style="background-image: url(assets/images/shapes/service-two-img-box-hover-bg.png);">
                                 </div>
                                 <div class="service-two__img">
-                                    <img src="assets/images/project/coasteira-logo.png" alt="">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/coasteira-logo.png" alt="Logo Coasteira Luxe Resorts">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/cO02.png" alt="Mockup Pantufa">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/cO03.png" alt="Mockup Roupão">
+                                            </div>
+                                        </div>
+                                        <!-- Botões de navegação -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -298,60 +335,98 @@ Busco gerar resultados positivos por meio do design, sempre priorizando a experi
                             <div class="service-two__content-inner">
                                 <div class="service-two__content">
                                     <div class="service-two__icon">
-                                        <span class="icon-responsible"></span>
+                                        <span class="icon-graduation"></span>
                                     </div>
                                     <h3><a href="assets/flies/unoeste.pdf" target="_blank">Identidade Visual</a></h3>
                                 </div>
-                                <p class="service-two__text">Projeto acadêmico da escola de comunicação & estratégia digital - 30 anos</p>
+                                <p class="service-two__text">
+                                    (Projeto acadêmico) Redesign da identidade visual em comemoração aos 30 anos da Universidade do Oeste Paulista – UNOESTE.  
+                                    O projeto teve como objetivo modernizar o logotipo institucional, preservando sua essência e tradição, ao mesmo tempo em que transmite inovação, dinamismo e evolução.  
+                                    A proposta visual busca reforçar os valores da universidade e sua trajetória de destaque no ensino, na pesquisa e na extensão.
+                                </p>
+
                                 <div class="service-two__read-more">
                                     <a href="assets/flies/unoeste.pdf" target="_blank">Mais Informações<span
                                             class="fas fa-arrow-circle-right"></span></a>
                                 </div>
                             </div>
                             <div class="service-two__img-box">
-                                <div class="service-two__img-box-bg"
+                                 <div class="service-two__img-box-bg"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-bg.png);">
                                 </div>
                                 <div class="service-two__img-box-bg-2"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-hover-bg.png);">
                                 </div>
                                 <div class="service-two__img">
-                                    <img src="assets/images/project/Unoeste.png" alt="">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/Unoeste.png" alt="Logo 30 anos UNOESTE">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/UN02.png" alt="Outdor">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/UN03.png" alt="Mockup Mochila   ">
+                                            </div>
+                                        </div>
+                                        <!-- Botões de navegação -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--service Two Single End-->
-                    <!--service Two Single Start-->
                     <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="300ms">
                         <div class="service-two__single">
                             <div class="service-two__content-inner">
                                 <div class="service-two__content">
                                     <div class="service-two__icon">
-                                        <span class="icon-creative"></span>
+                                        <span class="icon-paw"></span>
                                     </div>
                                     <h3><a href="assets/flies/ampara.pdf" target="_blank">Instituto Ampara Animal</a></h3>
                                 </div>
-                                <p class="service-two__text">Repaginação de logotipo Ampara Animal</p>
+                                <p class="service-two__text">
+                                    (Projeto acadêmica) Redesign da identidade visual do Instituto Ampara Animal, organização real dedicada à proteção e defesa dos animais.  
+                                    O trabalho teve como objetivo modernizar o logotipo existente, mantendo sua essência afetiva e reconhecível.  
+                                    Além da atualização da marca, foram desenvolvidos mockups e aplicações visuais que reforçam os valores da instituição — empatia, responsabilidade e compromisso com o bem-estar animal.
+                                </p>
                                 <div class="service-two__read-more">
                                     <a href="assets/flies/ampara.pdf" target="_blank">Mais Informações<span
                                             class="fas fa-arrow-circle-right"></span></a>
                                 </div>
                             </div>
                             <div class="service-two__img-box">
-                                <div class="service-two__img-box-bg"
+                                 <div class="service-two__img-box-bg"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-bg.png);">
                                 </div>
                                 <div class="service-two__img-box-bg-2"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-hover-bg.png);">
                                 </div>
                                 <div class="service-two__img">
-                                    <img src="assets/images/project/ampara.gif" alt="">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/ampara.gif" alt="Logo repaginada A Animal">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/AM02.jpg" alt="Mockup Bolça">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/AM03.jpg" alt="Mockup Camiseta">
+                                            </div>
+                                        </div>
+                                        <!-- Botões de navegação -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--service Two Single End-->
                 </div>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
@@ -439,7 +514,7 @@ Busco gerar resultados positivos por meio do design, sempre priorizando a experi
                         </div>
                     </div>
                 </div>
-                <div class="row  justify-content-center">
+                 <div class="row  justify-content-center">
                     <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
                         <div class="service-two__single">
                             <div class="service-two__content-inner">
@@ -449,21 +524,41 @@ Busco gerar resultados positivos por meio do design, sempre priorizando a experi
                                     </div>
                                     <h3><a href="assets/flies/datas_sazonais.pdf" target="_blank">Publicações</a></h3>
                                 </div>
-                                <p class="service-two__text">Card para Redes Sociais</p>
+                                <p class="service-two__text">
+                                    (Projeto profissional) Conjunto de publicações desenvolvidas para redes sociais da empresa, com foco em engajamento e identidade visual.  
+                                    As peças foram criadas para datas sazonais e campanhas temáticas, explorando cores, tipografias e elementos gráficos alinhados à comunicação da marca.  
+                                    O objetivo foi fortalecer a presença digital e transmitir mensagens de forma criativa e estratégica.
+                                </p>
                                 <div class="service-two__read-more">
                                     <a href="assets/flies/datas_sazonais.pdf" target="_blank">Mais informações<span
                                             class="fas fa-arrow-circle-right"></span></a>
                                 </div>
                             </div>
                             <div class="service-two__img-box">
-                                <div class="service-two__img-box-bg"
+                                 <div class="service-two__img-box-bg"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-bg.png);">
                                 </div>
                                 <div class="service-two__img-box-bg-2"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-hover-bg.png);">
                                 </div>
                                 <div class="service-two__img">
-                                    <img src="assets/images/project/datas_sazonais.jpg" alt="">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/datas_sazonais.jpg" alt="Dia dos pais">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/DS02.jpg" alt="Sexta-feira Santa">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/DS03.jpg" alt="Dia do cliente">
+                                            </div>
+                                        </div>
+                                        <!-- Botões de navegação -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -473,25 +568,45 @@ Busco gerar resultados positivos por meio do design, sempre priorizando a experi
                             <div class="service-two__content-inner">
                                 <div class="service-two__content">
                                     <div class="service-two__icon">
-                                        <span class="icon-bullhorn"></span>
+                                        <span class="icon-chat"></span>
                                     </div>
                                     <h3><a href="https://design.penpot.app/#/view?file-id=d27e272d-6b22-8014-8006-51c641e23758&page-id=d27e272d-6b22-8014-8006-51c641e23759&section=interactions&index=0&share-id=e21d721b-b52f-80fd-8006-a60b4263a7b0" target="_blank">Chat Unoeste</a></h3>
                                 </div>
-                                <p class="service-two__text">Protótipo de APP Chat Unoeste</p>
+                                <p class="service-two__text">
+                                    (Projeto acadêmico) Desenvolvimento do protótipo de aplicativo “Chat Unoeste”, criado para facilitar a comunicação entre alunos, professores e setores da universidade.  
+                                    O projeto foi elaborado com foco em usabilidade, acessibilidade e experiência do usuário, contemplando as etapas de pesquisa, wireframe e prototipagem interativa.  
+                                    A proposta busca integrar a comunidade acadêmica em um ambiente digital intuitivo e funcional.
+                                </p>
                                 <div class="service-two__read-more">
                                     <a href="https://design.penpot.app/#/view?file-id=d27e272d-6b22-8014-8006-51c641e23758&page-id=d27e272d-6b22-8014-8006-51c641e23759&section=interactions&index=0&share-id=e21d721b-b52f-80fd-8006-a60b4263a7b0" target="_blank">Mais informações<span
                                             class="fas fa-arrow-circle-right"></span></a>
                                 </div>
                             </div>
                             <div class="service-two__img-box">
-                                <div class="service-two__img-box-bg"
+                                 <div class="service-two__img-box-bg"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-bg.png);">
                                 </div>
                                 <div class="service-two__img-box-bg-2"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-hover-bg.png);">
                                 </div>
                                 <div class="service-two__img">
-                                    <img src="assets/images/project/capa_chat_unoeste.png" alt="">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/capa_chat_unoeste.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/CH02.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/CH03.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Botões de navegação -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -501,25 +616,97 @@ Busco gerar resultados positivos por meio do design, sempre priorizando a experi
                             <div class="service-two__content-inner">
                                 <div class="service-two__content">
                                     <div class="service-two__icon">
-                                        <span class="icon-bullhorn"></span>
+                                        <span class="icon-bus1"></span>
                                     </div>
                                     <h3><a href="assets/flies/acess_buss.pdf" target="_blank">Acess Buss</a></h3>
                                 </div>
-                                <p class="service-two__text">Protótipo de APP para ônibus acessível</p>
+                                <p class="service-two__text">
+                                    (Projeto acadêmico) Protótipo do aplicativo “Acess Buss”, desenvolvido com foco em acessibilidade e inclusão no transporte público.  
+                                    A proposta busca facilitar o uso de ônibus por pessoas com deficiência ou mobilidade reduzida, oferecendo recursos como localização em tempo real, reserva de poltronas adaptadas e informações sobre rotas acessíveis.  
+                                    O design prioriza a navegação intuitiva e a experiência do usuário, promovendo autonomia e conforto durante o deslocamento.
+                                </p>
                                 <div class="service-two__read-more">
                                     <a href="assets/flies/acess_buss.pdf" target="_blank">Mais informações<span
                                             class="fas fa-arrow-circle-right"></span></a>
                                 </div>
                             </div>
                             <div class="service-two__img-box">
-                                <div class="service-two__img-box-bg"
+                                 <div class="service-two__img-box-bg"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-bg.png);">
                                 </div>
                                 <div class="service-two__img-box-bg-2"
                                     style="background-image: url(assets/images/shapes/service-two-img-box-hover-bg.png);">
                                 </div>
                                 <div class="service-two__img">
-                                    <img src="assets/images/project/acess_buss.png" alt="">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/acess_buss.png" alt="Tela inicial protótipo.">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/AB02.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/AB03.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Botões de navegação -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="service-two__single">
+                            <div class="service-two__content-inner">
+                                <div class="service-two__content">
+                                    <div class="service-two__icon">
+                                        <span class="icon-travel"></span>
+                                    </div>
+                                    <h3><a href="assets/flies/acess_buss.pdf" target="_blank">APP Viagens</a></h3>
+                                </div>
+                                <p class="service-two__text">
+                                    (Projeto acadêmico) Protótipo de um aplicativo para compra de viagens, desenvolvido no Figma e inspirado na experiência de agências de turismo digitais.
+                                        O projeto foi idealizado para permitir que o usuário escolha destinos de forma prática e organizada, simulando um processo de contratação de viagens.
+
+                                        A interface foi construída com foco na navegação intuitiva, oferecendo telas claras para seleção de destinos.
+                                        O design prioriza usabilidade e acessibilidade, tornando a experiência de buscar e adquirir viagens mais rápida, moderna e eficiente, contribuindo para uma jornada do usuário leve e funcional.
+                                </p>
+                                <div class="service-two__read-more">
+                                    <a href="https://www.figma.com/proto/hqZWb1gOr4Jp9BF7eeiAtL/Untitled?node-id=0-1&t=wnc1BQCr21w5Qs2W-1" target="_blank">Mais informações<span
+                                            class="fas fa-arrow-circle-right"></span></a>
+                                </div>
+                            </div>
+                            <div class="service-two__img-box">
+                                 <div class="service-two__img-box-bg"
+                                    style="background-image: url(assets/images/shapes/service-two-img-box-bg.png);">
+                                </div>
+                                <div class="service-two__img-box-bg-2"
+                                    style="background-image: url(assets/images/shapes/service-two-img-box-hover-bg.png);">
+                                </div>
+                                <div class="service-two__img">
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/VG01.png" alt="Tela inicial protótipo.">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/VG02.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/project/VG03.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Botões de navegação -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
