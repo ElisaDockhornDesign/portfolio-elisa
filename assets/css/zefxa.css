@@ -7052,6 +7052,11 @@ ul {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 768px){
+.about-three__shape-2{
+display:none;
+}
+}
 
 .about-three__video-link {
   position: absolute;
